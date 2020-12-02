@@ -5,7 +5,7 @@ const Map = ({ center, zoom }) => {
   return (
     <div className="map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyCyXvupKbO_UPzb1BEnpJ_HIW-nYxsj1o4" }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_API_KEY }}
         defaultCenter={center}
         defaultZoom={zoom}
       >
